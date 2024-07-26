@@ -10,7 +10,6 @@ class FXRateService:
     BASE_URL = "https://api.currencylayer.com"
 
     def __init__(self, access_key):
-        self._response = None
         self._access_key = access_key
 
     def historical(self, from_fx, to_fx, date):
